@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Cat President: White House Heist</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="hud">
+  <div id="hearts">❤️❤️❤️</div>
+  <div id="objective">Objective: reach the White House gate!</div>
+  <div id="fishcount"></div>
+</div>
+<div id="message"></div>
+<div id="menu" class="overlay">
+  <h1>🐱 Cat President</h1>
+  <h2>White House Heist</h2>
+  <p>Sneak past Obama, Biden &amp; Kamala…<br>then STEAL TRUMP'S MICROPHONE<br>and shout: <b>"I am new president!"</b></p>
+  <button id="startBtn">▶ Start Heist</button>
+  <p class="hint">WASD / Arrows to move · Space to jump · E to interact · P to pause</p>
+</div>
+<div id="pause" class="overlay hidden">
+  <h1>⏸ Paused</h1>
+  <button id="resumeBtn">Resume</button>
+  <button id="restartBtn1">Restart</button>
+</div>
+<div id="gameover" class="overlay hidden">
+  <h1>💀 Cat-napped!</h1>
+  <p>The Secret Service got you…</p>
+  <button id="restartBtn2">Try Again</button>
+</div>
+<div id="win" class="overlay hidden">
+  <h1>🎤 "I AM NEW PRESIDENT!" 🐱</h1>
+  <p>The cat now naps in the Oval Office.<br>Approval rating: 100% (all cats voted)</p>
+  <button id="restartBtn3">Play Again</button>
+</div>
+<div id="touchUI" class="hidden">
+  <div id="touchJump">JUMP</div>
+  <div id="touchUse">E</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/entities.js"></script>
+<script src="js/game.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
